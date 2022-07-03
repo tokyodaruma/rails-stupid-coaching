@@ -1,10 +1,14 @@
-<h1>Stupid Coach</h1>
-<div>
-  <p>Careful what you ask...he is <em>stupid</em> after all.</p>
-</div>
-<div>
-  <form action="answer">
-    <input type="text" name="question" value="<%= @question %>">
-    <input type="submit" value="Ask!">
-  </form>
+<div class="container">
+  <div class="card-body">
+    <h1>Stupid Coach</h1>
+    <div>
+      <p>Careful what you ask...he is stupid after all.</p>
+    </div>
+    <div class="mb-3">
+      <form action="answer" class="mb-3 row">
+        <input type="text" name="question" value="<%= @question %>" class="form-control">
+        <input type="submit" value="Ask!" class="btn btn-primary mb-3">
+      </form>
+    </div>
+  </div>
 </div>
